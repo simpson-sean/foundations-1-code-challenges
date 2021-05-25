@@ -17,12 +17,10 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    const names = [];
-    for (let pet of arr) {
-        names.push(pet.name);
-    }
+    const petNames = [];
+    arr.forEach( pet => petNames.push(pet.name));
 
-    return names;
+    return petNames;
 }
 
 /*
@@ -32,12 +30,9 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    const types = [];
-    for (let pet of arr) {
-        types.push(pet.type)
-    }
-
-    return types.reverse();
+    const petTypes = [];
+    arr.forEach( pet => petTypes.push(pet.type));
+    return petTypes.reverse();
 }
 
 /*
